@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 80vh;
+  width: 100vw;
+}
+main {
+  border-radius: 10px;
+  position: relative;
+  width: 80vw;
+  height: 90vh;
+  margin: auto;
+  margin-top: 5%;
+}
+.leftsection img {
+  position: absolute;
+  background-color: white;
+  height: 550px;
+  width: 50%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.rightsection {
+  display: block;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  width: 50%;
+  height: 550px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.signintext {
+  width: 25%;
+  margin: auto;
+  margin-top: 100px;
+}
+.theform {
+  margin-top: 20px;
+  display: block;
+}
+.rightsection label,
+input {
+  display: block;
+  width: 50%;
+  margin: auto;
+  outline: none;
+  margin-top: 5px;
+}
+.rightsection label {
+  font-size: small;
+  font-weight: bold;
+}
+.rightsection input {
+  background-color: white;
+  margin-bottom: 5px;
+  height: 30px;
+  border-radius: 3px;
+  outline: none;
+}
+.rightsection .emailinput {
+  margin-bottom: 15px;
+}
+.alink1 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: smaller;
+  margin: auto;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.alink1:hover {
+  text-decoration: underline;
+  color: green;
+  transition: 0.5s ease-in-out;
+}
+.button input {
+  width: 50%;
+  margin: auto;
+  margin-top: 40px;
+  height: 30px;
+  font-weight: bold;
+  background-color: rgb(186, 235, 108);
+  border-radius: 5px;
+}
+.button input:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.account {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: smaller;
+  font-weight: bold;
+}
+.alink2 {
+  margin-left: 5px;
+  text-decoration: none;
+  color: green;
+}
+.alink2:hover {
+  text-decoration: underline;
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+.horizontal {
+  opacity: 35%;
+  margin-top: 10px;
+  text-align: center;
+}
+.googlesignup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: smaller;
+  margin-top: 5px;
+}
+.googlesignup img {
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  margin-right: 5px;
+}
+.googlesignup button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 30px;
+  background-color: white;
+  outline: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+.googlesignup button:hover {
+  background-color: rgb(186, 235, 108);
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+@media (max-width: 480px) {
+  body {
+    height: 80vh;
+    width: 100vw;
+    /* background-color: white; */
+  }
+  .leftsection {
+    display: none;
+  }
+  .rightsection {
+    width: 105vw;
+    height: 110vh;
+    border-radius: 0;
+    margin-top: -20px;
+    margin-right: -40px;
+    font-size: larger;
+  }
+  .theform {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .account {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .alink1 {
+    margin-top: 30px;
+  }
+  .rightsection input {
+    width: 300px;
+    margin-left: 47px;
+  }
+  .rightsection label {
+    margin-left: 47px;
+  }
+  .signintext {
+    width: 120px;
+    background-color: green;
+    margin: auto;
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-top: 3px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .googlesignup button {
+    width: 300px;
+    margin: auto;
+    margin-left: 45px;
+  }
+}
+@media (max-width: 300px){
+  body{
+    background-color: white;
+  }
+  .theform{
+    margin-right: 50px;
+    margin-left: -40px;
+  }
+}
